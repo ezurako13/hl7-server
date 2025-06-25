@@ -21,7 +21,7 @@ class SimpleECGParser:
         
     def read_and_parse(self):
         """Read file and extract ECG data"""
-        print(f"📖 Reading: {os.path.basename(self.filepath)}")
+        # print(f"📖 Reading: {os.path.basename(self.filepath)}")
         
         with open(self.filepath, 'r', encoding='utf-8') as file:
             content = file.read()
@@ -94,9 +94,9 @@ class SimpleECGParser:
         
         self.ecg_data = continuous_data
         
-        print(f"✅ Extracted {len(continuous_data)} ECG leads")
-        print(f"📊 {len(sorted_timestamps)} time periods, {len(continuous_data[list(continuous_data.keys())[0]]):,} samples per lead")
-        print(f"⏱️  Duration: {len(continuous_data[list(continuous_data.keys())[0]]) / 100:.0f} seconds at 100 Hz")
+        # print(f"✅ Extracted {len(continuous_data)} ECG leads")
+        # print(f"📊 {len(sorted_timestamps)} time periods, {len(continuous_data[list(continuous_data.keys())[0]]):,} samples per lead")
+        # print(f"⏱️  Duration: {len(continuous_data[list(continuous_data.keys())[0]]) / 100:.0f} seconds at 100 Hz")
         
         return True
     
