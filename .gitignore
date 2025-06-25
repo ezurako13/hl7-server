@@ -6,3 +6,5 @@
 *.hea
 outputs/*
 tex/*
+context/*
+__pycache__/*
