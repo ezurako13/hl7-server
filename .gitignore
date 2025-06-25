@@ -1,2 +1,8 @@
 *.hl7
 *.csv
+*.log
+*.atr
+*.dat
+*.hea
+outputs/*
+tex/*
